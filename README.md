@@ -60,6 +60,7 @@ For a quick overview and demonstration, watch [this](https://youtu.be/if7kzJ9MAA
 - To run the data generators we first need to compile the C++ implementation of [ODrM*](https://github.com/gswagner/mstar_public). This can be done by executing the following command in the `data_generators/od_mstar3/` directory:
 ```
 python3 setup.py build_ext --inplace
+python data_generators/test/mstar_maps_unseen_same_type.py -outputdir=output -odmstardir=data_generators/od_mstar3
 ```
 - To check run python3 in the `data_generators` directory and execute the following commands:
 ```

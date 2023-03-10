@@ -19,7 +19,7 @@ import traceback
 from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.preprocessing.image import img_to_array
 import random
-import torch
+
 try:
     import ipdb as pdb
 except ImportError:
@@ -147,7 +147,7 @@ def find_path(obs_map, init_pos, goals, model_config=None,
         return path, o
     if return_memory:
         return output 
-    
+
     torch.cuda.empty_cache()
 
     return path

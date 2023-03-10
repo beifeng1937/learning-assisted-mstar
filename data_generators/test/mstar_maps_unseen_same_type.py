@@ -5,10 +5,10 @@ import json
 import sys
 import argparse
 
-OUT_DIM = 32
+OUT_DIM = 8
 OBS_DEN = 0.2
-MAX_AGENTS = 200
-NUM_WORLDS = 100
+MAX_AGENTS = 5
+NUM_WORLDS = 1
 MAX_COST_POSSIBLE = OUT_DIM * OUT_DIM
 
 class NumpyEncoder(json.JSONEncoder):
@@ -39,7 +39,7 @@ class NumpyEncoder(json.JSONEncoder):
 
 def generate_mapf_instances(output_dir, od_mstar3_dir):
   sys.path.append(od_mstar3_dir)
-  import cpp_mstar
+  # import cpp_mstar
   
   for world_num in range(NUM_WORLDS):
     print('Working on World: ', world_num)
